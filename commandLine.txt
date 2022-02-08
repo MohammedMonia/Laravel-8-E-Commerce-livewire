@@ -1,0 +1,20 @@
+composer require livewire/livewire
+
+php artisan make:livewire homeComponent
+
+Auth jetstreem:
+
+composer require laravel/Jetstreem
+
+php artisan jetstreem:install livewire
+
+//Cart
+composer require hardevine/shoppingcart
+
+php artisan vendor:publish --provider="Gloudemans\ShoppingcartServiceProvider" --tag="config"
+
+//Stripe gateway
+
+https://cartalyst.com/manual/stripe-laravel/13.x
+
+ php artisan vendor:publish --provider="Gloudemans\Shoppingcart\ShoppingcartServiceProvider" --tag="migrations"
